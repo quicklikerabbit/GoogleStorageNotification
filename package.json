@@ -1,7 +1,7 @@
 {
   "name": "googlestoragenotification",
   "version": "1.0.0",
-  "description": "",
+  "description": "Google Cloud Function that posts to Slack updates to a Cloud Storage Bucket",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/quicklikerabbit/GoogleStorageNotification.git"
   },
-  "author": "",
+  "author": "Steven Richards",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/quicklikerabbit/GoogleStorageNotification/issues"
   },
-  "homepage": "https://github.com/quicklikerabbit/GoogleStorageNotification#readme"
+  "homepage": "https://github.com/quicklikerabbit/GoogleStorageNotification#readme",
+  "dependencies": {
+    "axios": "^0.17.0"
+  }
 }
