@@ -1,5 +1,6 @@
 const axios = require("axios");
-const config = require("./config.json")
+const config = require("./config.json");
+const numeral = require('numeral');
 
 exports.helloGCS = function(event, callback) {
   const file = event.data;
@@ -19,7 +20,7 @@ exports.helloGCS = function(event, callback) {
       method: 'post',
       url: config.SLACK_WEBHOOK,
       data: {
-        text: `File: ${file.name} was uploaded to ${file.bucket}.`
+        text: `File: ${file.name} was uploaded to ${file.bucket}.\nSize: ${numeral(file.size).format('0,0')} bytes`
       }
     });
   } else {

@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/quicklikerabbit/GoogleStorageNotification#readme",
   "dependencies": {
-    "axios": "^0.17.0"
+    "axios": "^0.17.0",
+    "numeral": "^2.0.6"
   }
 }
